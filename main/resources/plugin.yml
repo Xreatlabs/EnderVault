@@ -1,0 +1,27 @@
+name: EnderVaults
+version: 1.0.0
+main: com.plugin.endervaults.EnderVaults
+api-version: 1.13
+author: xreatlabs
+description: Expandable Ender Chests with unlockable pages
+commands:
+  echest:
+    description: Opens your ender chest or specified vault
+    usage: /<command> [page|list|buy]
+    aliases: [ev, endervault]
+permissions:
+  endervaults.use:
+    description: Allows use of /echest command
+    default: true
+  endervaults.buy:
+    description: Allows buying new vaults
+    default: true
+  endervaults.admin:
+    description: Allows admin controls
+    default: op
+  endervaults.open.*:
+    description: Allows opening all vaults
+    default: true
+  endervaults.open.1:
+    description: Allows opening vault 1
+    default: true

@@ -1,0 +1,75 @@
+# EnderVaults Configuration
+# This file contains configuration options for the EnderVaults plugin
+# Created by xreatlabs
+
+# Vault configuration
+# Each vault can have a cost in money (requires Vault) and/or coins (PlayerPoints or custom)
+vaults:
+  1:
+    cost-money: 0
+    cost-coins: 0
+  2:
+    cost-money: 25000
+    cost-coins: 0
+  3:
+    cost-money: 50000
+    cost-coins: 10
+  4:
+    cost-money: 100000
+    cost-coins: 25
+  5:
+    cost-money: 250000
+    cost-coins: 50
+  6:
+    cost-money: 500000
+    cost-coins: 100
+  7:
+    cost-money: 1000000
+    cost-coins: 200
+  8:
+    cost-money: 2000000
+    cost-coins: 400
+  9:
+    cost-money: 5000000
+    cost-coins: 1000
+
+# GUI Settings
+gui:
+  title: "Your Ender Vaults"
+  size: 27
+  # Materials for unlocked and locked vaults in the GUI
+  unlocked-material: GREEN_STAINED_GLASS_PANE
+  locked-material: RED_STAINED_GLASS_PANE
+
+# Economy Settings
+economy:
+  # Enable Vault economy integration
+  use-vault: true
+  # Enable PlayerPoints integration
+  use-playerpoints: true
+  # Enable custom coins system
+  use-custom-coins: false
+
+# Messages
+messages:
+  prefix: "&8[&6EnderVaults&8] "
+  no-permission: "&cYou don't have permission to use this command."
+  must-be-player: "&cThis command can only be used by players."
+  invalid-vault: "&cInvalid vault number."
+  not-unlocked: "&cYou haven't unlocked vault %vault% yet."
+  already-unlocked: "&cYou already own vault %vault%."
+  unlock-in-order: "&cYou must unlock vaults in order. Unlock vault %next% first."
+  purchase-success-money: "&aSuccessfully purchased vault %vault% for $%cost%."
+  purchase-success-coins: "&aSuccessfully purchased vault %vault% for %cost% coins."
+  insufficient-funds: "&cYou don't have enough money or coins to purchase this vault."
+  vault-opened: "&aOpened vault %vault%."
+  admin-only: "&cYou don't have permission to use admin commands."
+
+# Feature Toggles
+features:
+  # Enable auto-purchase prompt when trying to open a locked vault
+  auto-purchase-prompt: true
+  # Enable fireworks effect when unlocking a new vault
+  unlock-fireworks: true
+  # Enable sound effects
+  sounds: true
